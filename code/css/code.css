@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cambay', sans-serif;
+}
+li{
+    list-style: none;
+}
+.fa-whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 40px;
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 30%;
+    color: #fff;
+    cursor: pointer;
+}
+/*CABECERA*/
+.portada-header{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgba(0, 0, 0, .7);
+}
+.back-image{
+    background-image: url(../../src/images/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 680px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 9;
+}
+.logo{
+    width: 100px;
+    height: 100%;
+    display: flex;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: calc(100% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+}
+ul li a{
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+}
+ul li a:hover{
+    height: 100%;
+    background-color: rgba(255, 255, 255, .2);
+}
+.contacto{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contacto .fa-solid{
+    cursor: pointer;
+}
+.portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    height: calc(100% - 80px);
+}
+.portada h3{
+    font-size: 25px;
+}
+.portada h1{
+    font-size: 40px;
+}
+/*DESCRIPCION PROFESIONAL*/
+.profesionales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 0;
+    align-items: center;
+}
+.prof {
+    width: 1000px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 70px;
+}
+
+.imgProfile {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.imgProfile:hover img{
+    transform: scale(1.1,1.1) rotateY(360deg);
+    transition: .2s;
+    /*transform: rotateY(360deg);*/
+}
+.imgProfile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 3px rgba(0,0,0,.6);
+}
+.descProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 15px;
+}
+.descProfile .title .fa-solid{
+    padding-right: 10px;
+}
+.descProfile li{
+    font-size: 13px;
+    line-height: 1.9;
+    color: #808080;
+    font-weight: 500;
+}
