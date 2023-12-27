@@ -120,6 +120,17 @@ ul li a:hover{
     padding: 60px 20px 0;
     align-items: center;
 }
+.profesionales h1{
+    font-size: 40px;
+    display: flex;
+    color: #4b4e53;
+    border-left: #4b4e53 2px solid;
+    border-right: #4b4e53 2px solid;
+    padding: 0 20px;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 50px;
+}
 .prof {
     width: 1000px;
     max-width: 1000px;
@@ -141,10 +152,11 @@ ul li a:hover{
     /*transform: rotateY(360deg);*/
 }
 .imgProfile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
     box-shadow: 0 0 8px 3px rgba(0,0,0,.6);
+    border: 8px solid #fff;
 }
 .descProfile {
     display: flex;
@@ -161,4 +173,80 @@ ul li a:hover{
     line-height: 1.9;
     color: #808080;
     font-weight: 500;
+}
+/*PROYECTOS*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    padding: 50px 0;
+}
+.proyectos .title-proyecto{
+    border-left: #4b4e53 2px solid;
+    border-right: #4b4e53 2px solid;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+}
+.proyectos h1{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b4e53;
+}
+.prod-proyectos{
+    display: flex;
+}
+.proy-conten {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.separate{
+    box-shadow: 0 0 7px 1px rgba(255,255,255,.5);
+    border-radius: 50%;
+    background-color: #e4e4e4;
+    border: 6px solid #fff;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.separate h3{
+    color: #fff;
+}
+.separate .back-img {
+    background-image: url(https://terranova-peru.com/resource/images/primera_section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    border-radius: 50%;
+    display: flex;
+}
+.proy-conten img{
+    width: 200px;
+    height: 100px;
+    display: flex;
+}
+footer{
+    background-image: url(https://nihm-group.com/wp-content/uploads/2021/07/bg-page.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 100px;
 }
