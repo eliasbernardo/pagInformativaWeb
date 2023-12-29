@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="code/js/icons.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cambay:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="code/css/code.css">
     <link rel="icon" href="src/logo/logo.avif" type="image/x-icon">
     <title>JDK-DEGLOPERS</title>
@@ -22,7 +22,8 @@
             </ul>
         </div>
         <div class="contacto">
-            <i class="fa-solid fa-phone" id="phone"></i>
+            <!--<i class="fa-solid fa-phone" id="phone"></i>-->
+            <i class="fa-regular fa-address-card" id="card" onclick="solicitudInformacion('mostrar')"></i>
         </div>
     </header>
     <div class="portada-header">
@@ -107,12 +108,45 @@
             </div>
         </div>
     </div>
+    <div class="servicios">
+        <div class="conten-services">
+            <div class="title-servicios">
+                <div class="text">
+                    <h5>NUESTROS</h5>
+                    <h1>SERVICIOS</h1>
+                </div>
+            </div>
+            <div class="lista-servicios">
+                <li><i class="fa-solid fa-laptop-code"></i> Páginas Web</li>
+                <li><i class="fa-solid fa-laptop-file"></i> Páginas Informativas</li>
+                <li><i class="fa-solid fa-computer"></i> Aplicativos Web</li>
+            </div>
+        </div>
+    </div>
     <footer>
-        <div class="contact-foot">
-            <li>elias2bernardo2@gmail.com</li>
-            <li>+51 967 909 280</li>
+        <div class="content-foot">
+            <div class="logo-tipo">
+                <h1>JDK-DEGLOPERS</h1>
+            </div>
+            <div></div>
+            <div class="contact-foot">
+                <li><i class="fa-solid fa-envelope"></i> <span>elias2bernardo2@gmail.com</span></li>
+                <li><i class="fa-brands fa-square-whatsapp"></i> <span>+51 967 909 280</span></li>
+                <li><i class="fa-brands fa-facebook"></i> <span>Elias Bernardo</span></li>
+                <li><i class="fa-brands fa-instagram"></i><span>eliasbernardo96</span></li>
+            </div>
         </div>
     </footer>
+    <div class="formulario" id="formulario">
+        <i class="fa-solid fa-x" onclick="solicitudInformacion('ocultar')"></i>
+        <form class="contain-form">
+            <h2>SOLICITAR INFORMACIÓN</h2>
+            <input type="text" placeholder="Ingrese Nombres" required>
+            <input type="text" placeholder="Correo" required>
+            <input type="number" placeholder="Cellphone" min="9" max="9" required>
+            <button>ENVIAR</button>
+        </form>
+    </div>
     <i class="fa-brands fa-whatsapp"></i>
 
     <script src="code/js/app.js"></script>

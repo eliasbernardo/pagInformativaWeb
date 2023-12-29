@@ -1,6 +1,7 @@
 function scrolltop(){
     let head = document.getElementById("head");
     let phone = document.getElementById('phone');
+    let card = document.getElementById('card');
     if (window.scrollY>0){
         head.style.background = "#fff";
         head.style.transition = ".2s";
@@ -9,6 +10,7 @@ function scrolltop(){
         styleEtA(about,"#000","900");
         styleEtA(contact,"#000","900");
         styleEtA(phone,"#000","900");
+        styleEtA(card,"#000","900");
     }else{
         head.style.backgroundColor = "rgba(0,0,0,.7)";
         head.style.transition = ".2s";
@@ -17,6 +19,7 @@ function scrolltop(){
         styleEtA(about,"#fff","400");
         styleEtA(contact,"#fff","400");
         styleEtA(phone,"#fff");
+        styleEtA(card,"#fff");
     }
 }
 function styleEtA(variable,color,weigth){
@@ -25,5 +28,21 @@ function styleEtA(variable,color,weigth){
     }
     if(weigth){
         variable.style.fontWeight = weigth;
+    }
+}
+
+function solicitudInformacion(solicitud){
+    if(solicitud == "mostrar"){
+        let formulario = document.getElementById('formulario');
+        formulario.style.left = "0";
+        formulario.style.opacity = "1";
+        formulario.style.transition = "left .2s";
+        formulario.style.transition = "opacity .5s";
+    }else if(solicitud == "ocultar"){
+        let formulario = document.getElementById('formulario');
+        formulario.style.left = "-100%";
+        formulario.style.opacity = "0";
+        formulario.style.transition = "left .5s";
+        formulario.style.transition = "opacity .2s";
     }
 }
