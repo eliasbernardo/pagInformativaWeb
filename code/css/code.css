@@ -196,7 +196,7 @@ ul li a:hover{
     margin-bottom: 50px;
 }
 .prof {
-    width: 1000px;
+    /*width: 1000px;*/
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -404,3 +404,10 @@ footer{
     font-size: 25px;
     width: 50px;
 }
+
+/*----------------RESPONSIVE------------------*/
+@media(min-width:768px) and (max-width:1025px){
+
+}
+@media(min-width:481px) and (max-width:767px){}
+@media(max-width:480px){}

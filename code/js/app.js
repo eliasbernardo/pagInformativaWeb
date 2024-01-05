@@ -1,7 +1,7 @@
 function scrolltop(){
     let head = document.getElementById("head");
     let phone = document.getElementById('phone');
-    let card = document.getElementById('card');
+    let cards = document.getElementById('cards');
     if (window.scrollY>0){
         head.style.background = "#fff";
         head.style.transition = ".2s";
@@ -9,8 +9,7 @@ function scrolltop(){
         styleEtA(home,"#000","900");
         styleEtA(about,"#000","900");
         styleEtA(contact,"#000","900");
-        styleEtA(phone,"#000","900");
-        styleEtA(card,"#000","900");
+        styleEtA(cards,"#000");
     }else{
         head.style.backgroundColor = "rgba(0,0,0,.7)";
         head.style.transition = ".2s";
@@ -18,8 +17,7 @@ function scrolltop(){
         styleEtA(home,"#fff","400");
         styleEtA(about,"#fff","400");
         styleEtA(contact,"#fff","400");
-        styleEtA(phone,"#fff");
-        styleEtA(card,"#fff");
+        styleEtA(cards,"#fff");
     }
 }
 function styleEtA(variable,color,weigth){
