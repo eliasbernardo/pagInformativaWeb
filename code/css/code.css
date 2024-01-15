@@ -95,7 +95,7 @@ li{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 680px;
+    height: 700px;
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +107,8 @@ header{
     justify-content: center;
     position: sticky;
     top: 0;
-    height: 80px;
+    height: 100px;
+    padding: 5px 0;
     background-color: rgba(0, 0, 0, .7);
     z-index: 9;
 }
@@ -115,10 +116,14 @@ header{
     width: 100px;
     height: 100%;
     display: flex;
+    margin-left: 10px;
 }
-.logo img{
+.logo svg{
     width: 100%;
     height: 100%;
+}
+.logo #fghdfdgc{
+    display: none;
 }
 .menu{
     width: calc(100% - 200px);
@@ -380,10 +385,15 @@ footer{
     grid-template-columns: repeat(3,1fr);
     max-width: 1200px;
     width: 1200px;
+    align-items: center;
 }
 .logo-tipo{
     display: flex;
     align-items: center;
+}
+.logo-tipo svg{
+    width: 200px;
+    fill: red;
 }
 .logo-tipo h1{
     font-family: 'Lobster', sans-serif;
@@ -404,10 +414,18 @@ footer{
     font-size: 25px;
     width: 50px;
 }
-
-/*----------------RESPONSIVE------------------*/
-@media(min-width:768px) and (max-width:1025px){
-
+/*ABOUT US*/
+.about-us{
+    width: 100%;
+    display: flex;
 }
+.contenido-about-us .conten{
+    width: 300px;
+}
+.contenido-about-us .conten img {
+    width: 100%;
+}
+/*----------------RESPONSIVE------------------*/
+@media(min-width:768px) and (max-width:1025px){}
 @media(min-width:481px) and (max-width:767px){}
 @media(max-width:480px){}

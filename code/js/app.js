@@ -2,10 +2,14 @@ function scrolltop(){
     let head = document.getElementById("head");
     let phone = document.getElementById('phone');
     let cards = document.getElementById('cards');
+    let logoBlack = document.getElementById('fghdfdgc');
+    let logoWhite = document.getElementById('ceefhcgh');
     if (window.scrollY>0){
         head.style.background = "#fff";
         head.style.transition = ".2s";
         head.style.boxShadow = "0px 1px 9px 0px rgba(0,0,0,.2)";
+        logoWhite.style.display = "none";
+        logoBlack.style.display = "flex";
         styleEtA(home,"#000","900");
         styleEtA(about,"#000","900");
         styleEtA(contact,"#000","900");
@@ -14,6 +18,8 @@ function scrolltop(){
         head.style.backgroundColor = "rgba(0,0,0,.7)";
         head.style.transition = ".2s";
         head.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0)";
+        logoBlack.style.display = "none";
+        logoWhite.style.display = "flex";
         styleEtA(home,"#fff","400");
         styleEtA(about,"#fff","400");
         styleEtA(contact,"#fff","400");
