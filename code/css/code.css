@@ -465,10 +465,12 @@ footer{
     font-weight: 600;
 }
 .contenido-about-us .conten p{
-    font-size: 14px;
+    font-size: 13px;
+    color: #7e8082;
 }
 .conten div {
     border: 10px solid #fff;
+    box-shadow: 0 0 0 0 rgba(0,0,0,.2);
 }
 .contenido-about-us .conten .descr-conten{
     background-color: #fff;
